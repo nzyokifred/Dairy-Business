@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <title>Dairy-Business</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1> DAIRY BUSINESS PRODUCTION FORM</h1>
+
+        </header>
+        <img src="/cow.jpeg" width="50%">
+        <!-- FORM DETAILS -->
+        <div class="formdoc">
+            <form action="submit" onsubmit="reportout();">
+
+                <div class="sheds">
+                    <label>Shed A:Milk in ltrs</label>
+                    <input class="Shed A" type="text" placeholder="Amount in ltrs">
+                </div>
+                <div class="sheds">
+                    <label>Shed B:Milk in ltrs</label>
+                    <input class="Shed B" type="text" placeholder="Amount in ltrs">
+                </div>
+                <div class="sheds">
+                    <label>Shed C:Milk in ltrs</label>
+                    <input class="Shed C" type="text" placeholder="Amount in ltrs">
+                </div>
+                <div class="sheds">
+                    <label>Shed D:Milk in ltrs</label>
+                    <input class="Shed D" type="text" placeholder="Amount in ltrs">
+                </div>
+                <button type="submit">submit</button>
+                <button class="reset" type="reset" onclick="resetpage();">Reset</button>
+
+            </form>
+
+
+            <!-- Production Output -->
+            <div class="Outputdata">
+                <h4 class="displayname">Production Data Log</h4>
+                <p class="Outputinfo"></p>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
